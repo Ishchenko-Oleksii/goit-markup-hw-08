@@ -409,6 +409,9 @@ a {
 	align-items: baseline;
 }
 
+.join-margin-logo {
+	margin-right: 70px;
+}
 .join-title {
 	font-weight: 700;
 	font-size: 14px;
@@ -416,6 +419,7 @@ a {
 	color: var(--white-bg-color);
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	margin-bottom: 10px;
 }
 .add-flex-join {
 	display: flex;
