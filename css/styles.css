@@ -507,6 +507,7 @@ a {
 .project-boxes {
 	box-sizing: border-box;
 	background: var(--white-bg-color);
+	cursor: pointer;
 }
 
 .project-boxes:hover,
