@@ -12,6 +12,7 @@
 	--hover-focus-icons-active-color: #188ce8;
 	--inbox-future-icon-color: #f5f4fa;
 	--social-networks-link-color: #afb1b8;
+	--join-social-link-box-color: #757575;
 }
 
 body {
@@ -129,31 +130,26 @@ a {
 	display: block;
 	padding-top: 24px;
 	padding-bottom: 25px;
+	display: flex;
+	align-items: center;
 }
 
 .contacts-icon-mail {
 	margin-right: 10px;
 	width: 16px;
 	height: 12px;
+	fill: currentColor;
 }
 
 .contacts-icon-phone {
 	margin-right: 10px;
 	width: 10px;
 	height: 16px;
+	fill: currentColor;
 }
 .header-contacts:hover,
 .header-contacts:focus {
 	color: var(--hover-focus-icons-active-color);
-}
-
-.header-contacts:hover,
-.header-contacts:focus,
-.contacts-icon-mail:hover,
-.contacts-icon-mail:focus,
-.contacts-icon-phone:hover,
-.contacts-icon-phone:focus {
-	fill: var(--hover-focus-icons-active-color);
 }
 
 /* (((((((((((((((( MAIN BODY )))))))))))))))))))))))) */
@@ -166,6 +162,9 @@ a {
 	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-img.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
+	max-width: 1600px;
+	max-height: 600px;
+	margin: auto;
 }
 .main-hat-title {
 	font-weight: 900;
@@ -292,15 +291,14 @@ a {
 }
 .team-text-padding {
 	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 /* ((((((((((((((((((((((((((( TEAM - SOCIAL LINKS )))))))))))))))))))))))))) */
 .add-flex-team {
 	display: flex;
 	justify-content: center;
-	margin: auto;
 	margin-top: 16px;
-	margin-bottom: 30px;
 	gap: 10px;
 }
 .add-flex-team-box {
@@ -310,20 +308,18 @@ a {
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
+	color: var(--social-networks-link-color);
 }
 
 .add-flex-team-box:hover,
 .add-flex-team-box:focus {
 	background-color: var(--hover-focus-icons-active-color);
+	color: var(--white-bg-color);
 }
 .team-social-link-box {
 	width: 20px;
 	height: 20px;
-	fill: var(--social-networks-link-color);
-}
-.add-flex-team-box:hover .team-social-link-box,
-.add-flex-team-box:focus .team-social-link-box {
-	fill: var(--white-bg-color);
+	fill: currentColor;
 }
 
 /* ((((((((((((((((((((((((((((((((( PARTNERS )))))))))))))))))))))))) */
@@ -336,22 +332,20 @@ a {
 	height: 92px;
 	border: 1px solid var(--social-networks-link-color);
 	border-radius: 4px;
+	color: var(--social-networks-link-color);
 }
+
 .partners-company-link:hover,
 .partners-company-link:focus {
 	border-color: var(--hover-focus-icons-active-color);
+	color: var(--hover-focus-icons-active-color);
 	cursor: pointer;
 }
+
 .partners-company-link-icon {
 	width: 106px;
 	height: 60px;
-	align-items: center;
-	justify-content: center;
-	fill: var(--social-networks-link-color);
-}
-.partners-company-link:hover .partners-company-link-icon,
-.partners-company-link:focus .partners-company-link-icon {
-	fill: var(--hover-focus-icons-active-color);
+	fill: currentColor;
 }
 
 /* ((((((((((((((((((((( FOOTER ))))))))))))))))))))))))) */
@@ -432,19 +426,18 @@ a {
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
+	color: var(--social-networks-link-color);
+	background-color: var(--join-social-link-box-color);
 }
 
 .add-flex-join-box:hover,
 .add-flex-join-box:focus {
 	background-color: var(--hover-focus-icons-active-color);
+	color: var(--white-bg-color);
 }
 .join-social-link-box {
 	width: 20px;
 	height: 20px;
-	fill: var(--social-networks-link-color);
-}
-.add-flex-join-box:hover .team-social-link-box,
-.add-flex-join-box:focus .team-social-link-box {
 	fill: var(--white-bg-color);
 }
 
@@ -485,6 +478,14 @@ a {
 .button-flex:last-child {
 	margin-right: 0;
 }
+
+/* ((((((((((((((((((((((( PROJECT BOXES ))))))))))))))))) */
+
+.project-flex {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
 .img-title {
 	font-weight: 700;
 	font-size: 18px;
@@ -508,13 +509,16 @@ a {
 	background: var(--white-bg-color);
 }
 
-.project-flex {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 30px;
-}
-
 .project-boxes:hover,
 .project-boxes:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-box-img {
+	display: block;
+}
+.project-box-img:hover,
+.project-box-img:focus {
+	border-color: var(--for-button-logo-color);
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
