@@ -3,7 +3,7 @@
 	--logo-font: "Raleway", sans-serif;
 	--backgraound-main-footer-color: #2f303a;
 	--secondary-text-color: #757575;
-	--for-button-logo-color: rgba(33, 150, 243, 1);
+	--for-button-logo-color: #2196f3;
 	--project-boxborder-color: #eeeeee;
 	--logo-studio-color: #000000;
 	--back-for-button-card-color: #f5f4fa;
@@ -164,7 +164,7 @@ a {
 	background-repeat: no-repeat;
 	max-width: 1600px;
 	max-height: 600px;
-	margin: auto;
+	margin: 0 auto;
 }
 .main-hat-title {
 	font-weight: 900;
@@ -413,7 +413,7 @@ a {
 	color: var(--white-bg-color);
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 .add-flex-join {
 	display: flex;
@@ -427,7 +427,7 @@ a {
 	height: 44px;
 	border-radius: 50%;
 	color: var(--social-networks-link-color);
-	background-color: var(--join-social-link-box-color);
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 .add-flex-join-box:hover,
@@ -466,8 +466,8 @@ a {
 .button-text:focus {
 	background-color: var(--for-button-logo-color);
 	color: var(--white-bg-color);
-
-	border-color: var(--for-button-logo-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
 }
 .button-flex {
 	display: flex;
@@ -505,21 +505,10 @@ a {
 	border-top: none;
 }
 .project-boxes {
-	box-sizing: border-box;
-	background: var(--white-bg-color);
-	cursor: pointer;
+	display: block;
 }
 
 .project-boxes:hover,
 .project-boxes:focus {
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.project-box-img {
-	display: block;
-}
-.project-box-img:hover,
-.project-box-img:focus {
-	border-color: var(--for-button-logo-color);
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
