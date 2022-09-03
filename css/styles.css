@@ -13,6 +13,7 @@
 	--inbox-future-icon-color: #f5f4fa;
 	--social-networks-link-color: #afb1b8;
 	--join-social-link-box-color: #757575;
+	--overlay-bgcolor: #2196f3e6;
 }
 
 body {
@@ -511,4 +512,32 @@ a {
 .project-boxes:hover,
 .project-boxes:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.overlay-size {
+	position: relative;
+	overflow: hidden;
+}
+
+.overlay {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: var(--overlay-bgcolor);
+	color: var(--white-bg-color);
+	padding: 10px;
+	font-family: inherit;
+	font-size: 18px;
+	line-height: 1.56;
+	overflow: auto;
+	transform: translateY(101%);
+	transition: transform 250ms linear;
+}
+.project-boxes:hover .overlay,
+.project-boxes:focus .overlay {
+	transform: translateY(0%);
 }
