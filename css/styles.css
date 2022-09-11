@@ -64,16 +64,6 @@ a {
 	padding-bottom: 94px;
 }
 
-.transition-bg {
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-.transition-color {
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-.transition-shadow {
-	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-
 /*((((((((((((((((((((((( Header styles ))))))))))))))))))))))))))*/
 
 /* (((((((((((((((((((((( LOGO ))))))))))))))))))))))))) */
@@ -109,6 +99,7 @@ a {
 	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .navigation-menu:hover,
@@ -159,6 +150,7 @@ a {
 	padding-bottom: 25px;
 	display: flex;
 	align-items: center;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .contacts-icon-mail {
@@ -336,6 +328,7 @@ a {
 	height: 44px;
 	border-radius: 50%;
 	color: var(--social-networks-link-color);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .add-flex-team-box:hover,
@@ -357,16 +350,15 @@ a {
 	justify-content: center;
 	width: 170px;
 	height: 92px;
-	border: 1px solid var(--social-networks-link-color);
+	border: 1px solid currentColor;
 	border-radius: 4px;
 	color: var(--social-networks-link-color);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .partners-company-link:hover,
 .partners-company-link:focus {
-	border-color: var(--hover-focus-icons-active-color);
 	color: var(--hover-focus-icons-active-color);
-	cursor: pointer;
 }
 
 .partners-company-link-icon {
@@ -418,10 +410,12 @@ a {
 .mail-footer {
 	line-height: 1.71;
 	color: rgba(255, 255, 255, 0.6);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .phone-footer {
 	line-height: 1.71;
 	color: rgba(255, 255, 255, 0.6);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 /* ((((((((((((((((((((((((((((( JOIN ))))))))))))))))))))))))*/
@@ -455,6 +449,7 @@ a {
 	border-radius: 50%;
 	color: var(--social-networks-link-color);
 	background-color: rgba(255, 255, 255, 0.1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .add-flex-join-box:hover,
@@ -488,9 +483,8 @@ a {
 	background-color: var(--back-for-button-card-color);
 	border: none;
 	padding: 6px 22px 6px 22px;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+		color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .button-text:hover,
@@ -546,11 +540,8 @@ a {
 }
 /* ((((((((((((((((((((((((((( OVERLAY STUDIO ))))))))))))))))))))))))))))))) */
 .main-overlay-text {
-	font-family: inherit;
 	font-weight: 700;
-	font-size: 14px;
 	line-height: 1.14;
-	text-align: center;
 	text-transform: uppercase;
 	color: var(--white-bg-color);
 }
@@ -559,7 +550,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 23.8%;
+	height: 70px;
 	width: 100%;
 	bottom: 0%;
 	background-color: var(--what-we-do-overlay-bg-color);
