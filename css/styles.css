@@ -178,7 +178,11 @@ a {
 	padding-top: 200px;
 	padding-bottom: 200px;
 	text-align: center;
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-img.jpg");
+	background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		),
+		url("../images/bg-img.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	max-width: 1600px;
@@ -290,7 +294,9 @@ a {
 
 .team-co-wockers-box {
 	background: var(--white-bg-color);
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+		0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
 
@@ -328,7 +334,9 @@ a {
 	height: 44px;
 	border-radius: 50%;
 	color: var(--social-networks-link-color);
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	transition: background-color 250ms
+			cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+		color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .add-flex-team-box:hover,
@@ -449,7 +457,8 @@ a {
 	border-radius: 50%;
 	color: var(--social-networks-link-color);
 	background-color: rgba(255, 255, 255, 0.1);
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	transition: background-color 250ms
+		cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .add-flex-join-box:hover,
@@ -458,6 +467,75 @@ a {
 	color: var(--white-bg-color);
 }
 .join-social-link-box {
+	width: 20px;
+	height: 20px;
+	fill: var(--white-bg-color);
+}
+/* (((((((((((((((((((((( SUBSCRIBE )))))))))))))))))))))) */
+
+.subscribe-marg {
+	margin-left: 93px;
+	width: 570px;
+	height: 86px;
+}
+
+.add-flex-subscribe {
+	display: flex;
+	gap: 12px;
+}
+.add-flex-subscribe-box {
+	width: 358px;
+	height: 40px;
+	background-color: inherit;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	padding-left: 16px;
+	cursor: pointer;
+	color: var(--white-bg-color);
+}
+.add-flex-subscribe-box::placeholder {
+	color: #ffffff99;
+}
+.modal-form-button-submit-subscribe {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	height: 40px;
+	width: 200px;
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	color: var(--white-bg-color);
+	letter-spacing: 0.06em;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: var(--for-button-logo-color);
+	border: none;
+	transition: background-color 250ms
+			cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.modal-form-button-submit-subscribe:hover,
+.modal-form-button-submit-subscribe:focus {
+	background-color: var(--hover-focus-icons-active-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+		0px 1px 2px rgba(0, 0, 0, 0.08),
+		0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+}
+
+.modal-form-subscribe-tg {
+	width: 24px;
+	height: 24px;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	cursor: pointer;
+	fill: #fff;
+}
+
+.subscribe-social-link-box {
 	width: 20px;
 	height: 20px;
 	fill: var(--white-bg-color);
@@ -483,7 +561,9 @@ a {
 	background-color: var(--back-for-button-card-color);
 	border: none;
 	padding: 6px 22px 6px 22px;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+	transition: background-color 250ms
+			cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
 		color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
@@ -491,7 +571,9 @@ a {
 .button-text:focus {
 	background-color: var(--for-button-logo-color);
 	color: var(--white-bg-color);
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+		0px 1px 2px rgba(0, 0, 0, 0.08),
+		0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
 }
 .button-flex {
@@ -531,12 +613,15 @@ a {
 }
 .project-boxes {
 	display: block;
-	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
+		0ms;
 }
 
 .project-boxes:hover,
 .project-boxes:focus {
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+		0px 4px 4px rgba(0, 0, 0, 0.06),
+		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* ((((((((((((((((((((((((((( OVERLAY STUDIO ))))))))))))))))))))))))))))))) */
 .main-overlay-text {
@@ -707,7 +792,8 @@ a {
 .modal-form-message:focus {
 	border: 1px solid #2196f3;
 	outline: none;
-	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	transition: border-color 250ms
+		cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .modal-form-check-box-lable {
@@ -734,11 +820,14 @@ a {
 .inside-check-box-icon {
 	fill: #ffffff;
 }
-.modal-form-check-input:checked + .modal-form-check-box-icons {
+.modal-form-check-input:checked
+	+ .modal-form-check-box-icons {
 	background: var(--for-button-logo-color);
 	border-color: var(--for-button-logo-color);
 }
-.modal-form-check-input:checked + .modal-form-check-box-icons .check-box-icon {
+.modal-form-check-input:checked
+	+ .modal-form-check-box-icons
+	.check-box-icon {
 	display: block;
 }
 .modal-check-box-text {
@@ -751,15 +840,16 @@ a {
 	border-bottom: 1px solid var(--for-button-logo-color);
 }
 
-.modal-form-check-input:focus + .modal-form-check-box-icons {
+.modal-form-check-input:focus
+	+ .modal-form-check-box-icons {
 	border: 2px solid #000;
-	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	transition: border-color 250ms
+		cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 /* ((((((((((((((((((((((((((((((BUTTON-SUBMIT)))))))))))))))))))))))))))))))) */
 
 .modal-form-button-submit {
-	
 	width: 200px;
 	height: 50px;
 	margin: auto;
@@ -776,12 +866,16 @@ a {
 	background-color: var(--for-button-logo-color);
 	border: none;
 	padding: 10px 52px 10px 52px;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	transition: background-color 250ms
+			cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .modal-form-button-submit:hover,
 .modal-form-button-submit:focus {
 	background-color: var(--hover-focus-icons-active-color);
-	
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+		0px 1px 2px rgba(0, 0, 0, 0.08),
+		0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
+}
