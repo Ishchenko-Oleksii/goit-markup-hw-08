@@ -1,0 +1,67 @@
+.button__text {
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	color: var(--mainbody-color);
+	letter-spacing: 0.03em;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: var(--back-for-button-card-color);
+	border: none;
+	padding: 6px 22px 6px 22px;
+	transition: background-color 250ms
+			cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+		color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.button__text:hover,
+.button__text:focus {
+	background-color: var(--for-button-logo-color);
+	color: var(--white-bg-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+		0px 1px 2px rgba(0, 0, 0, 0.08),
+		0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+}
+.button__flex {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+	gap: 8px;
+}
+.button__flex:last-child {
+	margin-right: 0;
+}
+
+.modal__form__button-submit {
+	width: 200px;
+	height: 50px;
+	margin: auto;
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	color: var(--white-bg-color);
+	letter-spacing: 0.03em;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: var(--for-button-logo-color);
+	border: none;
+	padding: 10px 52px 10px 52px;
+	transition: background-color 250ms
+			cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.modal__form__button-submit:hover,
+.modal__form__button-submit:focus {
+	background-color: var(--hover-focus-icons-active-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+		0px 1px 2px rgba(0, 0, 0, 0.08),
+		0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+}
