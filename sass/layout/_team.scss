@@ -1,9 +1,9 @@
 .team {
-	background: var(--back-for-button-card-color);
+	background: $back-for-button-card-color;
 }
 
 .team__co-wockers-box {
-	background: var(--white-bg-color);
+	background: $white-bg-color;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 		0px 1px 1px rgba(0, 0, 0, 0.14),
 		0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -14,14 +14,14 @@
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
-	color: var(--mainbody-color);
+	color: $mainbody-color;
 	text-align: center;
 	margin-bottom: 10px;
 }
 .team__speciality {
 	font-size: 16px;
 	line-height: 1.19;
-	color: var(--secondary-text-color);
+	color: $secondary-text-color;
 	text-align: center;
 }
 .team__text-padding {
@@ -42,17 +42,17 @@
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
-	color: var(--social-networks-link-color);
+	color: $social-networks-link-color;
 	transition: background-color 250ms
 			cubic-bezier(0.4, 0, 0.2, 1) 0ms,
 		color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+	&:hover,
+	&:focus {
+		background-color: $hover-focus-icons-active-color;
+		color: $white-bg-color;
+	}
 }
 
-.team__add-flex__box:hover,
-.team__add-flex__box:focus {
-	background-color: var(--hover-focus-icons-active-color);
-	color: var(--white-bg-color);
-}
 .team__social-link__box {
 	width: 20px;
 	height: 20px;

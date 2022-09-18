@@ -2,7 +2,7 @@
 	font-weight: 700;
 	line-height: 1.14;
 	text-transform: uppercase;
-	color: var(--white-bg-color);
+	color: $white-bg-color;
 }
 .overlay__what-we-do {
 	position: absolute;
@@ -12,7 +12,7 @@
 	height: 70px;
 	width: 100%;
 	bottom: 0%;
-	background-color: var(--what-we-do-overlay-bg-color);
+	background-color: $what-we-do-overlay-bg-color;
 }
 
 /* ((((((((((((((((((((((((((( OVERLAY-PORTFOLIO)))))))))))))))))))))))))))))))) */
@@ -30,8 +30,8 @@
 	width: 100%;
 	top: 0;
 	left: 0;
-	background-color: var(--overlay-bgcolor);
-	color: var(--white-bg-color);
+	background-color: $overlay-bgcolor;
+	color: $white-bg-color;
 	padding: 10px;
 	font-family: inherit;
 	font-size: 18px;
@@ -39,8 +39,8 @@
 	overflow: auto;
 	transform: translateY(101%);
 	transition: transform 250ms linear;
-}
-.project__boxes:hover .overlay,
-.project__boxes:focus .overlay {
-	transform: translateY(0%);
+	.project__boxes:hover &,
+	.project__boxes:focus & {
+		transform: translateY(0%);
+	}
 }

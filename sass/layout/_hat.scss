@@ -19,29 +19,12 @@
 	line-height: 1.36;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	color: var(--white-bg-color);
+	color: $white-bg-color;
 	margin-bottom: 30px;
 	width: calc(100% / 1.68);
 	/* calc(100%-56.5%); */
 	margin-left: auto;
 	margin-right: auto;
-}
-.main-button {
-	background: var(--for-button-logo-color);
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-	cursor: pointer;
-	border: none;
-}
-
-.main-button__text {
-	font-family: inherit;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.88;
-	color: var(--white-bg-color);
-	letter-spacing: 0.06em;
-	padding: 10px 32px 10px 32px;
 }
 
 /* (((((((((((((((((((((((( Our Features )))))))))))))))))))))))))))) */
@@ -50,13 +33,13 @@
 	font-weight: 700;
 	line-height: 1.14;
 	text-transform: uppercase;
-	color: var(--mainbody-color);
+	color: $mainbody-color;
 	font-size: 14px;
 	margin-bottom: 10px;
 }
 .our-features__title-text {
 	line-height: 1.71;
-	color: var(--secondary-text-color);
+	color: $secondary-text-color;
 }
 .our-features {
 	display: flex;

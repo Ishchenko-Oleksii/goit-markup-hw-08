@@ -7,6 +7,10 @@
 
 @import "./components/title";
 @import "./components/add-flex";
+@import "./components/overlay";
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/buttons";
 
 @import "./layout/logo-navigation";
 @import "./layout/header-contacts";
@@ -15,7 +19,4 @@
 @import "./layout/team";
 @import "./layout/partners";
 @import "./layout/footer";
-@import "./layout/buttons";
 @import "./layout/projects";
-@import "./layout/overlay";
-@import "./layout/backdrop";

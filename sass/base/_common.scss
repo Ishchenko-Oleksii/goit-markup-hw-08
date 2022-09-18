@@ -1,9 +1,9 @@
 body {
-	font-family: var(--main-text-font-family);
+	font-family: $main-text-font-family;
 	letter-spacing: 0.03em;
 	font-size: 14px;
-	background: var(--white-bg-color);
-	color: var(--mainbody-color);
+	background: $white-bg-color;
+	color: $mainbody-color;
 }
 
 h1,
