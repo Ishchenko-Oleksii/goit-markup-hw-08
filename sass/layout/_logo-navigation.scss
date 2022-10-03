@@ -10,7 +10,19 @@
 	padding-top: 24px;
 	padding-bottom: 25px;
 }
-
+@media screen and (min-width: 768px) {
+	.navigation__logo {
+		margin-right: 88px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.navigation__logo {
+		width: 145px;
+		font-size: 26px;
+		line-height: 1.19;
+		margin-right: 93px;
+	}
+}
 .navigation__logo__text {
 	color: $logo-studio-color;
 	background: $white-bg-color;

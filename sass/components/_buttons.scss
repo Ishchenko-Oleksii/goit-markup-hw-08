@@ -43,6 +43,11 @@
 		border-radius: 4px;
 	}
 }
+@media screen and (min-width: 1200px) {
+	.main-button {
+		padding: 10px 32px;
+	}
+}
 
 .button__flex {
 	display: flex;
