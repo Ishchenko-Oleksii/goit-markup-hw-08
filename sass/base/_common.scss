@@ -1,34 +1,48 @@
-body {
-	font-family: $main-text-font-family;
-	letter-spacing: 0.03em;
-	font-size: 14px;
-	background: $white-bg-color;
-	color: $mainbody-color;
-}
-
 h1,
 h2,
 h3,
-h4,
 p {
-	margin-top: 0;
-	margin-bottom: 0;
+    margin: 0;
 }
 
-ul,
-ol {
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-left: 0;
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
-ul,
-li {
-	list-style: none;
-}
 img {
-	display: block;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
-a {
-	text-decoration: none;
+
+address {
+    font-style: normal;
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    background-color: var(--primary-bgc);
+    color: var(--primary-text-color);
+    font-family: var(--primary-font);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
