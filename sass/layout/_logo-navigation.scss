@@ -19,9 +19,7 @@
 .navigation__position {
 	position: relative;
 }
-.current {
-	color: $for-button-logo-color;
-}
+
 .navigation__menu {
 	font-weight: 500;
 	line-height: 1.14;
@@ -48,7 +46,9 @@
 	border-radius: 2px;
 	background-color: $for-button-logo-color;
 }
-
+.current {
+	color: $for-button-logo-color;
+}
 .navigation__indents-menu {
 	margin-left: 93px;
 	gap: 50px;
